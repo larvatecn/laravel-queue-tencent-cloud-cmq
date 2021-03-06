@@ -1,0 +1,28 @@
+{
+  "name": "larva/laravel-queue-tencent-cloud-cmq",
+  "description": "This is a Laravel queue adapter for the Tencnet Cloud CMQ.",
+  "keywords": [ "queue", "laravel", "tencnet", "cmq" ],
+  "type": "library",
+  "license": "MIT",
+  "require": {
+    "illuminate/support": "^5.1 || ^6.0 || ^7.0 || ^8.0",
+    "illuminate/queue": "^5.1 || ^6.0 || ^7.0 || ^8.0",
+    "larva/tencent-cloud-cmq": "~1.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Larva\\Queue\\TencentCloudCMQ\\": "src"
+    }
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "1.0-dev"
+    },
+    "laravel": {
+      "providers": [
+        "Larva\\Queue\\TencentCloudCMQ\\CMQServiceProvider"
+      ]
+    }
+  },
+  "prefer-stable": true
+}
